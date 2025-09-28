@@ -28,7 +28,7 @@ try:
             element_list.extend([elements[i]] * atom_counts[i])
 
         structure = Structure.from_file(poscar_file)
-        filename = "/public23/home/sca1074/code/xuxun/xuxun2/tabletest/data"
+        filename = "./data"
 
 
         def convert_letter_to_number(letter):
@@ -95,7 +95,7 @@ try:
                 print("Site: ", [site.a,site.b,site.c])
         
         a = spacegroup_number
-        df0 = pd.read_csv(f"/public23/home/sca1074/code/xuxun/xuxun2/tabletest/{a}-a.txt", delimiter='\t')
+        df0 = pd.read_csv(f"./tabletest/{a}-a.txt", delimiter='\t')
         print("\n",spacegroup_number,"Spacegroup-High Symmetry Kpoints：",df0.iloc[2:, 0].values)
 
 

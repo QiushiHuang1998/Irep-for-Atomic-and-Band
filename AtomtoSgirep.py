@@ -28,7 +28,7 @@ try:
             element_list.extend([elements[i]] * atom_counts[i])
 
         structure = Structure.from_file(poscar_file)
-        filename = "./data"
+        filename = "./tabletest/data"
 
 
         def convert_letter_to_number(letter):
